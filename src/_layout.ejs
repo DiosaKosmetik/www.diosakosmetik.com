@@ -98,14 +98,14 @@
           <li><a href="<%= process.cwd()+"\\src\\"+current.source+".ejs"==__filename?"":"../" %>contact.html" <%- current.source=='contact' ? 'class="active"' : '' %>>Контакт</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Язык</a>
+              aria-expanded="false">
+				<img src="<%= process.cwd()+"\\src\\"+current.source+".ejs"==__filename?"":"../" %>assets/img/lang/rus.png">
+			</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="<%=getLangRootPath("de") %>"><img src="<%= process.cwd()+"\\src\\"+current.source+".ejs"==__filename?"":"../" %>assets/img/lang/ger.png">
                   Deutsch</a></li>
-              <li class="d-none"><a class="dropdown-item disabled" href="#"><img src="<%= process.cwd()+"\\src\\"+current.source+".ejs"==__filename?"":"../" %>assets/img/lang/rus.png">
+              <li><a class="dropdown-item disabled" href="#"><img src="<%= process.cwd()+"\\src\\"+current.source+".ejs"==__filename?"":"../" %>assets/img/lang/rus.png">
                   Русский</a></li>
-              <li><a class="dropdown-item" href="<%=getLangRootPath("ua") %>"><img src="<%= process.cwd()+"\\src\\"+current.source+".ejs"==__filename?"":"../" %>assets/img/lang/ukr.png">
-                  Українська</a></li>
             </ul>
           </li>
         </ul>

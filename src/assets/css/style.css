@@ -1322,3 +1322,6 @@ section {
   opacity: 0.9;
 }
 
+.dropdown-item.disabled, .dropdown-item:disabled, .navbar .dropdown ul a .disabled {
+  background-color: lightgray !important;
+}

@@ -106,15 +106,13 @@
           <li><a href="<%= getRootPath("de") %>contact.html" <%- current.source=='contact' ? 'class="active"' : '' %>>Kontakt</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Sprache
-            </a>
+				<img src="<%= getRootPath() %>assets/img/lang/ger.png">
+			</a>
             <ul class="dropdown-menu">
-              <li class="d-none"><a class="dropdown-item disabled" href="#"><img src="<%= getRootPath() %>assets/img/lang/ger.png">
+              <li><a class="dropdown-item disabled" href="#"><img src="<%= getRootPath() %>assets/img/lang/ger.png">
                   Deutsch</a></li>
               <li><a class="dropdown-item" href="<%-getLangRootPath("ru",true)%>"><img src="<%= getRootPath() %>assets/img/lang/rus.png">
                   Русский</a></li>
-              <li><a class="dropdown-item" href="<%-getLangRootPath("ua") %>"><img src="<%= getRootPath() %>assets/img/lang/ukr.png">
-                  Українська</a></li>
             </ul>
           </li>
         </ul>
